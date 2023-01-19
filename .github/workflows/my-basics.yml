@@ -1,4 +1,4 @@
-#----------------GitHub Actions------------
+#----------------GitHub Actions------------__
 
 name: My-GitHubActions-Basics
 env:
@@ -24,7 +24,7 @@ jobs:
           echo "Hello Message2"
           echo "APPLICATION_NAME: ${{ env.APPLICATION_NAME }}"
           
-       
+
       - name: Print current folder
         run: ls -la
         
@@ -60,7 +60,6 @@ jobs:
         
       - name: Lest test some packeges if they are here 2
         run: zip
-        
         
         
     
