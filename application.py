@@ -6,6 +6,7 @@
 # 1.0          13-Dec-2019    Initial Version
 #
 # ----------------------------------------------
+#privet
 from flask import Flask, render_template
 
 application = Flask(__name__)
