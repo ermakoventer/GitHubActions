@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Print Hello Message
         run: echo "Hello World from testing job"
+      - name: Print current folder
+        run: ls -la
     
 
   my_deploy:
