@@ -17,16 +17,23 @@ jobs:
     steps:
       - name: Print Hello Message in Testing
         run: echo "Hello World from testing job"
-# <<<<<<< HEAD
-      - name: Print current folder
-        run: ls -la
-# =======
+
       - name: Execute few commands
         run: |
           echo "Hello Message1"
           echo "Hello Message2"
           echo "APPLICATION_NAME: ${{ env.APPLICATION_NAME }}"
-# >>>>>>> b844a1c989be78ddd00e1dc7d76af65cc32ac779
+          
+       
+      - name: Print current folder
+        run: ls -la
+        
+      - name: Git clone my repo
+        uses: actions/checkout@v1
+        
+      - name: Print current folder
+        run: ls -la
+
     
 
   my_deploy:
@@ -40,6 +47,11 @@ jobs:
       - name: Deployment package
         run: echo "Deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"
         
+      - name: Lest test some packeges if they are here 1
+        run: aws --version
+        
+      - name: Lest test some packeges if they are here 2
+        run: zip
         
         
         
