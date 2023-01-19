@@ -30,7 +30,9 @@ jobs:
     
     steps:
       - name: Print Hello Message in Deploy
-        run: echo "Hello World from Deploy job"
+        run: |
+          echo "Hello World from Deploy job"
+          echp "DEPLOY_PACKAGE_NAME: ${{ env.DEPLOY_PACKAGE_NAME }}"
       - name: Deployment package
         run: echo "Deploy package name is ${{ env.APPLICATION_NAME }}"
         
