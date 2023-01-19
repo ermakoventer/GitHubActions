@@ -50,7 +50,7 @@ jobs:
           echo "VAr1 : ${{ env.VAR1 }}"
           echo "LOCAL VAR : $LOCAL_VAR"
         env:
-          LOCAL_VAR: "SUPER LOCAL VARIABLE"
+          LOCAL_VAR: "SUPER LOCAL VARIABLE1"
 
       - name: Deployment package
         run: echo "Deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"
